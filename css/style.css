@@ -3,13 +3,51 @@
 /*
     Clases Compartidas
 */
-.radius {
-    border-radius: 15px;
+.autor__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
+.radius {
+    border-radius: 20px;
+}
+
+.f-weight {
+    font-weight: 700;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+}
+
+.p__fecha-post {
+    font-size: 16px;
+}
+
+/*Etiquetas*/
 body {
     font-family: "Poppins";
-    font-weight: 100;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+article {
+    margin-top: 32px;
 }
 
 
@@ -18,43 +56,88 @@ body {
     width: 600px;
 }
 
+    /*Left__Section*/
+.left__section-img {
+    width: 603px;
+    height: 314;
+    object-fit: cover;
+}
 
+.primary-autor {
+    width: 60px;
+    height: 60px;
+}
 
-.img__logo {
-    width: 45px;
+.parrafo-aut-prim {
+    font-size: 18px;
+}
+
+    /*Right__Section*/
+.right__section-img {
+    width: 189px;
+    height: 145;
+}
+
+.right__section-h4 {
+    width: 187px;
+}
+
+.right__section-content {
+    margin-left: 20px;
 }
 
 .popular__post {
     margin: 30px 0 30px 0;
-    width: 350px;
-    height: 250px;
+    width: 298px;
+    height: 200px;
     object-fit: cover;
 }
 
-.autor__img {
-    width: 35px;
-    border-radius: 50px;
-
+article h4 {
+    width: 295px;
 }
 
 .categoria {
-    margin: 20px 0px 20px 0px;
-    width: 300px;
+    width: 298px;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 20px;
+    border-radius: 10px;
     color: #fff;
 }
 
+.img__logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 24px;
+    object-fit: cover;
+}
+
 #html {
-    background-color: red;
+    background-color: #E93E30;
 }
 
-.categoria__text {
-    
+#js {
+    background-color: #F7E018;
 }
 
-.autor {
-    display: flex;
+#css {
+    background-color: #299ED5;
 }
 
-.autor__name {
-    
+#react {
+    background-color: #292C33;
+}
+
+#vue {
+    background-color: #67C770;
+}
+
+#btrap {
+    background-color: #563D7C;
 }

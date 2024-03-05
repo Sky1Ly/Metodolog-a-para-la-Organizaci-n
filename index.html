@@ -10,68 +10,80 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Metodología para la organización</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!--Menú-->
-    <nav>
+    <nav class="container d-flex align-items-center m-5 mx-auto">
       <img src="./img/logos/adl.png" class="img__logo" />
-      <p class="menu__title">Blog FrontEnd</p>
+      <p class="my-0 ms-4 f-weight">Blog FrontEnd</p>
     </nav>
     <hr />
 
     <!--Sección de novedades-->
-    <header class="container row">
+    <header class="row mx-auto container mb-5">
       <!--Sección Izquierda-->
-      <div class="left__section col-xl-9">
-        <h2>Novedades</h2>
-        <img src="./img/posts/bootstrap.png" class="left__section-img" />
+      <div class="col-xl-9">
+        <h2 class="f-weight">Novedades</h2>
+        <img src="./img/posts/bootstrap.png" class="left__section-img radius" />
         <p class="p__fecha-post">24 Noviembre, 2022</p>
-        <h4 class="title__post">
+        <h3 class="f-weight">
           Modifica el tema de bootstrap con variables css
-        </h4>
+        </h3>
 
         <div class="autor">
-          <img src="./img/logos/adl.png" class="autor__img" />
-          <p class="autor__name">Desafío Latam</p>
+          <img src="./img/logos/adl.png" class="autor__img primary-autor" />
+          <p class="my-0 ms-3 parrafo-aut-prim">Desafío Latam</p>
         </div>
       </div>
 
       <!--Sección Derecha-->
       <div class="right__section col-xl-3">
-        <article>
-          <img src="./img/posts/Herencia-JS.png" class="popular__post radius" />
-          <p class="p__fecha-post">24 Noviembre, 2024</p>
-          <h4 class="title__post">Herencia en JavaScript</h4>
+        <article class="d-flex">
+          <img
+            src="./img/posts/Herencia-JS.png"
+            class="right__section-img radius"
+          />
+          <div class="right__section-content">
+            <p class="p__fecha-post">24 Noviembre, 2024</p>
+            <h4 class="f-weight right__section-h4">Herencia en JavaScript</h4>
 
-          <div class="autor">
-            <img src="./img/logos/adl.png" class="autor__img" />
-            <p class="autor__name">Desafío Latam</p>
+            <div class="autor">
+              <img src="./img/logos/adl.png" class="autor__img" />
+              <p class="my-0 ms-3">Desafío Latam</p>
+            </div>
           </div>
         </article>
 
-        <article>
+        <article class="d-flex">
           <img
             src="./img/posts/Etiquetas-semánticas-HTML.png"
-            class="popular__post radius"
+            class="right__section-img radius"
           />
-          <p class="p__fecha-post">24 Noviembre, 2024</p>
-          <h4 class="title__post">Etiquetas Semánticas</h4>
+          <div class="right__section-content">
+            <p class="p__fecha-post">24 Noviembre, 2024</p>
+            <h4 class="f-weight right__section-h4">Etiquetas Semánticas</h4>
 
-          <div class="autor">
-            <img src="./img/logos/adl.png" class="autor__img" />
-            <p class="autor__name">Desafío Latam</p>
+            <div class="autor">
+              <img src="./img/logos/adl.png" class="autor__img" />
+              <p class="my-0 ms-3">Desafío Latam</p>
+            </div>
           </div>
         </article>
 
-        <article>
-          <img src="./img/posts/reactComponents.png" class="popular__post radius" />
-          <p class="p__fecha-post">24 Noviembre, 2024</p>
-          <h4 class="title__post">Componentes React</h4>
+        <article class="d-flex">
+          <img
+            src="./img/posts/reactComponents.png"
+            class="right__section-img radius"
+          />
+          <div class="right__section-content">
+            <p class="p__fecha-post">24 Noviembre, 2024</p>
+            <h4 class="f-weight right__section-h4">Componentes React</h4>
 
-          <div class="autor">
-            <img src="./img/logos/adl.png" class="autor__img" />
-            <p class="autor__name">Desafío Latam</p>
+            <div class="autor">
+              <img src="./img/logos/adl.png" class="autor__img" />
+              <p class="my-0 ms-3">Desafío Latam</p>
+            </div>
           </div>
         </article>
       </div>
@@ -79,11 +91,11 @@
     <hr />
 
     <!--Sección de Populares-->
-    <section class="container row">
+    <section class="container row mx-auto mb-5">
       <!--Sección Izquierda-->
       <!--Row 1-->
       <div class="col-xl-9">
-        <h2>Populares</h2>
+        <h2 class="f-weight">Populares</h2>
         <div class="row">
           <article class="col-xl-6">
             <img
@@ -91,22 +103,22 @@
               class="popular__post radius"
             />
             <p class="p__fecha-post">24 Noviembre, 2024</p>
-            <h4 class="title__post">Componentes Vue</h4>
+            <h4 class="f-weight">Componentes Vue</h4>
 
             <div class="autor">
               <img src="./img/logos/adl.png" class="autor__img" />
-              <p class="autor__name">Desafío Latam</p>
+              <p class="my-0 ms-3">Desafío Latam</p>
             </div>
           </article>
 
           <article class="col-xl-6">
             <img src="./img/posts/api-js.png" class="popular__post radius" />
             <p class="p__fecha-post">24 Noviembre, 2024</p>
-            <h4 class="title__post">Consumo de API con JavaScript</h4>
+            <h4 class="f-weight">Consumo de API con JavaScript</h4>
 
             <div class="autor">
               <img src="./img/logos/adl.png" class="autor__img" />
-              <p class="autor__name">Desafío Latam</p>
+              <p class="my-0 ms-3">Desafío Latam</p>
             </div>
           </article>
         </div>
@@ -116,73 +128,73 @@
           <article class="col-xl-6">
             <img src="./img/posts/sass.jpg" class="popular__post radius" />
             <p class="p__fecha-post">24 Noviembre, 2024</p>
-            <h4 class="title__post">CSS reusable con Sass</h4>
+            <h4 class="f-weight">CSS reusable con Sass</h4>
 
             <div class="autor">
               <img src="./img/logos/adl.png" class="autor__img" />
-              <p class="autor__name">Desafío Latam</p>
+              <p class="my-0 ms-3">Desafío Latam</p>
             </div>
           </article>
 
           <article class="col-xl-6">
             <img src="./img/posts/bootstrap.png" class="popular__post radius" />
             <p class="p__fecha-post">24 Noviembre, 2024</p>
-            <h4 class="title__post">Componentes bootstrap</h4>
+            <h4 class="f-weight">Componentes bootstrap</h4>
 
             <div class="autor">
               <img src="./img/logos/adl.png" class="autor__img" />
-              <p class="autor__name">Desafío Latam</p>
+              <p class="my-0 ms-3">Desafío Latam</p>
             </div>
           </article>
         </div>
       </div>
       <!--Sección Derecha-->
       <div class="col-xl-3">
-        <h2>Categorías</h2>
+        <h2 class="f-weight">Categorías</h2>
 
         <div class="categoria" id="html">
           <img src="./img/logos/html.png" class="img__logo" />
-          <p class="categoria__text">HTML</p>
+          <p class="categoria__text my-0 me-4">HTML</p>
         </div>
 
-        <div class="categoria">
+        <div class="categoria" id="js">
           <img src="./img/logos/js.png" class="img__logo" />
-          <p class="categoria__text">JavaScript</p>
+          <p class="categoria__text f-weight my-0 me-4">JavaScript</p>
         </div>
 
-        <div class="categoria">
+        <div class="categoria" id="css">
           <img src="./img/logos/css.png" class="img__logo" />
-          <p class="categoria__text">CSS</p>
+          <p class="categoria__text f-weight my-0 me-4">CSS</p>
         </div>
 
-        <div class="categoria">
+        <div class="categoria" id="react">
           <img src="./img/logos/react.png" class="img__logo" />
-          <p class="categoria__text">React</p>
+          <p class="categoria__text f-weight my-0 me-4">React</p>
         </div>
 
-        <div class="categoria">
+        <div class="categoria" id="vue">
           <img src="./img/logos/vue.png" class="img__logo" />
-          <p class="categoria__text">Vue</p>
+          <p class="categoria__text f-weight my-0 me-4">Vue</p>
         </div>
 
-        <div class="categoria">
+        <div class="categoria" id="btrap">
           <img src="./img/logos/bootstrap-logo.png" class="img__logo" />
-          <p class="categoria__text">bootstrap</p>
+          <p class="categoria__text f-weight my-0 me-4">bootstrap</p>
         </div>
 
-        <p class="p__fecha-post">Ver todas las categorías</p>
+        <p class="mt-4">Ver todas las categorías ></p>
       </div>
     </section>
     <hr />
 
-    <footer>
-      <div>
+    <footer class="container mx-auto row m-5">
+      <div class="col-xl-6 d-flex align-items-center">
         <img src="./img/logos/adl.png" class="img__logo" />
-        <p class="menu__title">Blog FrontEnd</p>
+        <p class="f-weight my-0 ms-4">Blog FrontEnd</p>
       </div>
 
-      <div>
-        <p>Eider Agudelo - 2024</p>
+      <div class="col-xl-6 d-flex justify-content-end align-items-center">
+        <p class="my-0">Eider Agudelo - 2024</p>
       </div>
     </footer>
 
